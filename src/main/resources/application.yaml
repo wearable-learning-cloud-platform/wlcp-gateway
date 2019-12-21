@@ -1,0 +1,13 @@
+spring:
+  application:    name: wlcp-gateway
+server:
+   port: 8050
+eureka:
+   client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+zuul:
+  routes:
+    users:
+      path: /wlcp/**
+      url: http://localhost:8080/WLCPFrontEnd/
