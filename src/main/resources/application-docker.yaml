@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: wlcp-gateway
+server:
+   port: 8050
+eureka:
+   client:
+    serviceUrl:
+      defaultZone: http://wlcp-discovery:8761/eureka/
