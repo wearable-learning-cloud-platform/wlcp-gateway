@@ -1,6 +1,8 @@
 spring:
   application:
     name: wlcp-gateway
+  cloud:    gateway:      discovery:        locator:          enabled: true
+          lower-case-service-id: true
 server:
    port: 8050
 eureka:
