@@ -8,13 +8,7 @@ spring:
           enabled: true
           lower-case-service-id: true
 server:
-   port: 443
-   ssl:
-    key-store-type: PKCS12
-    key-store: classpath:keystore/wlcp-wildcard.p12
-    key-store-password: ${SSL_KEYSTORE_PASSWORD}
-    key-alias: ${SSL_KEYSTORE_ALIAS}
-    enabled: true
+   port: 80
 eureka:
    client:
     serviceUrl:
