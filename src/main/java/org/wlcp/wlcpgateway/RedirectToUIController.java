@@ -12,7 +12,7 @@ public class RedirectToUIController {
 	@GetMapping("/")
 	public RedirectView localRedirect() {
 	    RedirectView redirectView = new RedirectView();
-	    redirectView.setUrl("../wlcp-ui/index.html");
+	    redirectView.setUrl("../wlcp-ui/");
 	    return redirectView;
 	}
 	
